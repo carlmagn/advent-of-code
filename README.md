@@ -1,0 +1,1 @@
+These code snippets are exercises based on the 2020 advent of code challenge (https://adventofcode.com/).
