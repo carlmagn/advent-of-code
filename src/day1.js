@@ -2,7 +2,7 @@ import { getData } from "./getData.js";
 
 async function findCorrectNumbers(){
 
-  const numbers = await getData("1")
+  const numbers = await getData("1", "\n")
   
   for (let first = 0; first < numbers.length-2; first++){
     for (let second = first+1; second < numbers.length-1; second++){

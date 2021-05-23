@@ -1,7 +1,7 @@
 import { getData } from './getData.js'
 
 async function findSlopeHits(rightMovement, downMovement){
-  const slope = await getData(3);
+  const slope = await getData(3, "\n");
 
   let right = 0;
   let down = 0;

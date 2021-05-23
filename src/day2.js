@@ -1,7 +1,7 @@
 import { getData } from "./getData.js";
 
 async function findCorrectPasswords1(){
-  const data = await getData("2");
+  const data = await getData("2", "\n");
   let totalCorrectPasswords = 0;
 
   data.forEach(row => {
@@ -26,7 +26,7 @@ async function findCorrectPasswords1(){
 }
 
 async function findCorrectPasswords2(){
-  const data = await getData("2");
+  const data = await getData("2", "\n");
   let totalCorrectPasswords = 0;
 
   data.forEach(row => {
@@ -48,5 +48,5 @@ async function findCorrectPasswords2(){
   return totalCorrectPasswords;
 }
 
-// console.log(await findCorrectPasswords1());
+console.log(await findCorrectPasswords1());
 console.log(await findCorrectPasswords2());
